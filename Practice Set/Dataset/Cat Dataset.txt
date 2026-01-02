@@ -1,0 +1,47 @@
+—Create the CAT table
+
+CREATE TABLE CAT (
+    id INTEGER PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    breed VARCHAR(30) NOT NULL,
+    coloration VARCHAR(30) NOT NULL,
+    age INTEGER NOT NULL,
+    Gender CHAR(1) NOT NULL,
+    fav_toy VARCHAR(30),
+    CHECK (sex IN ('M', 'F'))
+);
+
+--Insert the cat data
+
+INSERT INTO CAT (id, name, breed, coloration, age, Gender, fav_toy) VALUES
+(1, 'Micky', 'Maine Coon', 'tortoiseshell', 3, 'M', 'ball - red'),
+(2, 'Nine', 'Ragamuffin', 'cream', 2, 'M', 'ball - green'),
+(3, 'Carmen', 'Persian', 'brown', 2, 'F', 'toy mouse'),
+(4, 'Luna', 'Abyssinian', 'tortoiseshell', 12, 'F', 'teaser'),
+(5, 'Bella', 'Siamese', 'red', 15, 'F', 'teaser'),
+(6, 'Tiger', 'Maine Coon', 'black', 12, 'M', 'toy mouse'),
+(7, 'Shadow', 'Ragdoll', 'white', 16, 'M', NULL),
+(8, 'Oreo', 'Siamese', 'red', 4, 'F', 'toy mouse'),
+(9, 'Gizmo', 'Ragdoll', 'blue', 3, 'M', 'laser'),
+(10, 'Lucy', 'Persian', 'blue', 7, 'F', 'teaser');
+
+--END OF SCRIPT
+
+--DO NOT PASTE THE QUERY IN SCRIPT FROM HERE
+
+/*
+**Get to know the cat table**
+
+The`cat` table! 
+Select all data from this table. 
+As you can see, the table has the following columns 
+(their names are mostly self-explanatory):
+- `id`– the id of a given cat,
+- `name`– the name of a given cat,
+- `breed`– the breed of a given cat,
+- `coloration`– the coloration of a given cat,
+- `age`– the age of a given cat,
+- `Gender`– the gender of a given cat,
+- `fav_toy` -  the most favorite toy of a given cat.
+
+*/
